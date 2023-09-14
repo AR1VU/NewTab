@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+
+  "name": "New Tab - AR1VU",
+  "description": "Supercharged New Tab experience",
+  "action": {
+    "default_icon": "icon48.png"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "version": "1.2",
+  "chrome_url_overrides": {
+    "newtab": "new-tab.html"
+  },
+
+  "permissions": ["alarms", "storage", "tabs", "favicon"],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["_favicon/*"],
+      "matches": ["<all_urls>"],
+      "extension_ids": ["*"]
+    }
+  ]
+}

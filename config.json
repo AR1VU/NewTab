@@ -1,0 +1,54 @@
+{
+  "_____comment1_____": "Weather Widget",
+  "weatherAPIKey": "INSERT API KEY",
+  "city": "Dubai",
+
+  "_____comment2_____": "App Icons / Shortcuts",
+
+  "shortCut1Icon": "/assets/images/Apps/placeholder.png",
+  "shortCut1Link": "https://example.com",
+
+  "shortCut2Icon": "/assets/images/Apps/placeholder.png",
+  "shortCut2Link": "https://example.com",
+
+  "shortCut3Icon": "/assets/images/Apps/placeholder.png",
+  "shortCut3Link": "https://example.com",
+
+  "shortCut4Icon": "/assets/images/Apps/placeholder.png",
+  "shortCut4Link": "https://example.com",
+
+  "shortCut5Icon": "/assets/images/Apps/placeholder.png",
+  "shortCut5Link": "https://example.com",
+
+  "shortCut6Icon": "/assets/images/Apps/placeholder.png",
+  "shortCut6Link": "https://example.com",
+
+  "bookmark1Icon": "/assets/images/Apps/bookmarks/placeholder.png",
+  "bookmark1Link": "https://example.com",
+
+  "bookmark2Icon": "/assets/images/Apps/bookmarks/placeholder.png",
+  "bookmark2Link": "https://example.com",
+
+  "bookmark3Icon": "/assets/images/Apps/bookmarks/placeholder.png",
+  "bookmark3Link": "https://example.com",
+
+  "bookmark4Icon": "/assets/images/Apps/bookmarks/placeholder.png",
+  "bookmark4Link": "https://example.com",
+
+  "_____comment3_____": "Backgrounds",
+
+  "bg1": "",
+  "colorBg1": "white",
+
+  "bg2": "",
+  "colorBg2": "white",
+
+  "bg3": "",
+  "colorBg3": "white",
+
+  "bg4": "",
+  "colorBg4": "white",
+
+  "bg5": "",
+  "colorBg5": "white"
+}
