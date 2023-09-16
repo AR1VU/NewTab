@@ -1,5 +1,10 @@
 @import url("/assets/fonts/poppins.css");
 
+@font-face {
+  font-family: 'AR1VU';
+  src: url('/assets/AR1VU.ttf') format('truetype');
+}
+
 body {
   font-family: "Poppins";
   color: white;
