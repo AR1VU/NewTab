@@ -26,7 +26,6 @@ function addZero(n) {
   return (parseInt(n, 10) < 10 ? "0" : "") + n;
 }
 
-
 // Shortcuts
 fetch("/config.json")
   .then((response) => response.json())
@@ -460,6 +459,20 @@ document.addEventListener("keydown", function (event) {
   const searchBar = document.getElementById("search-bar");
   if (event.key === "Escape" && searchBar.matches(":focus")) {
     searchBar.blur();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.ctrlKey && event.altKey) {
+    const pg1 = document.getElementById("pg1");
+    const pg2 = document.getElementById("pg2");
+    if (pg2.style.opacity == 0) {
+      pg2.style.opacity = 1;
+      pg1.style.opacity = 0;
+    } else {
+      pg2.style.opacity = 0;
+      pg1.style.opacity = 1;
+    }
   }
 });
 
