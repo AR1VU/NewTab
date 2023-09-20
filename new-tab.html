@@ -8,6 +8,29 @@
     <link rel="shortcut icon" href="icon48.ico" type=“image/x-icon”/>
   </head>
 
+  <style>
+    textarea {
+      width: 100%;
+      margin-top: 4%;
+      min-height: 52px;
+      min-width: 25rem;
+      background: #333a3e;
+      border-radius: 7px;
+      border-style: none;
+      box-shadow: 0 2px 6px rgba(28, 27, 34, 0.5);
+      color: #969a9c;
+      font-size: 15px;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-style: none;
+      border: none;
+      outline: none;
+      color: #ffffff;
+    }
+  </style>
+
   <body>
     <div id="pg1" class="pg1">
       <div class="split left">
@@ -110,11 +133,111 @@
           </div>
         </div>
       </div>
-      
     </div>
-    <div style="font-family:AR1VU;position: fixed; bottom: 0; right: 0; padding: 10px; font-size: 20px; color: #ccc; z-index: 9999;">AR1VU</div>
+
+    <div id="pg2" class="pg2">
+      <div class="split-textarea">
+        <div class="centered">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 10px;
+            "
+          >
+            <div>
+              <button
+                onclick="document.execCommand('undo', false, null);"
+                style="
+                  font-weight: bold;
+                  background-color: #333a3e;
+                  color: white;
+                  padding: 10px 20px;
+                  border: none;
+                  border-radius: 5px;
+                  cursor: pointer;
+                "
+              >
+                Undo
+              </button>
+              <button
+                onclick="document.execCommand('redo', false, null);"
+                style="
+                  font-weight: bold;
+                  background-color: #333a3e;
+                  color: white;
+                  padding: 10px 20px;
+                  border: none;
+                  border-radius: 5px;
+                  cursor: pointer;
+                "
+              >
+                Redo
+              </button>
+            </div>
+          </div>
+          <textarea
+            id="notepad"
+            rows="27"
+            cols="100"
+            style="
+              font-family: Arial, sans-serif;
+              font-size: 16px;
+              padding: 10px;
+              border: 2px solid #ccc;
+              border-radius: 5px;
+            "
+            placeholder="eggsmile kolipaka"
+          ></textarea>
+
+          <script>
+            const notepad = document.getElementById("notepad");
+
+            // Load saved text from local storage
+            notepad.value = localStorage.getItem("text");
+
+            // Autosave text to local storage
+            notepad.addEventListener("input", () => {
+              localStorage.setItem("text", notepad.value);
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        font-family: AR1VU;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        font-size: 20px;
+        color: #ccc;
+        z-index: 9999;
+      "
+    >
+      AR1VU
+    </div>
   </body>
 
   <!-- JavaScript -->
   <script src="script.js"></script>
+
+  <script>
+    document.addEventListener("keydown", (event) => {
+      if (event.ctrlKey && event.altKey) {
+        const pg1 = document.getElementById("pg1");
+        const pg2 = document.getElementById("pg2");
+        if (pg1.style.opacity === "0") {
+          pg1.style.opacity = 1;
+          pg2.style.opacity = 0;
+        } else {
+          pg1.style.opacity = 0;
+          pg2.style.opacity = 1;
+        }
+      }
+    });
+  </script>
 </html>

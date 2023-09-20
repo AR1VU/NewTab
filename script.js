@@ -26,6 +26,7 @@ function addZero(n) {
   return (parseInt(n, 10) < 10 ? "0" : "") + n;
 }
 
+
 // Shortcuts
 fetch("/config.json")
   .then((response) => response.json())

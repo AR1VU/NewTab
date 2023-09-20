@@ -79,6 +79,16 @@ h2 {
   padding-top: 20px;
 }
 
+.split-textarea {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
 .left {
   left: 6.2%;
 }
@@ -138,7 +148,20 @@ input {
   font-weight: bold;
 }
 
-input:focus {
+textarea {
+  width: 100%;
+  margin-top: 4%;
+  min-height: 52px;
+  min-width: 25rem;
+  background: #333a3e;
+  border-radius: 7px;
+  border-style: none;
+  box-shadow: 0 2px 6px rgba(28, 27, 34, 0.5);
+  color: #969a9c;
+  font-size: 15px;
+}
+
+input:focus, textarea:focus {
   border-style: none;
   border: none;
   outline: none;
@@ -218,6 +241,7 @@ body {
 }
 
 .pg2 {
+  width: 100%;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
