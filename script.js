@@ -445,10 +445,8 @@ fetch("/config.json")
 // Notepad
 const notepad = document.getElementById("notepad");
 
-// Load saved text from local storage
 notepad.value = localStorage.getItem("text");
 
-// Autosave text to local storage
 notepad.addEventListener("input", () => {
   localStorage.setItem("text", notepad.value);
 });
