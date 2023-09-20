@@ -18,6 +18,7 @@ A new ***🔹SUPERCHARGED🔹*** New Tab Experience for your browser
 - **Weather** (API Key Required)
 - **Battery Information**
 - **Connection Information**
+- **Notepad** (Ctrl+Alt)
 
 
 ## Installation and Setup
