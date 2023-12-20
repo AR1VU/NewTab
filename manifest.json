@@ -1,27 +1,17 @@
 {
-  "manifest_version": 3,
-
-  "name": "New Tab - AR1VU",
-  "description": "Supercharged New Tab experience",
-  "action": {
-    "default_icon": "icon48.png"
+  "name": "__MSG_appName__",
+  "short_name": "__MSG_appShortName__",
+  "description": "__MSG_appDescription__",
+  "version": "7.5.0",
+  "manifest_version": 2,
+  "default_locale": "en_GB",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
   },
   "icons": {
-    "48": "icon48.png",
-    "128": "icon128.png"
-  },
-  "version": "1.2",
-  "chrome_url_overrides": {
-    "newtab": "new-tab.html"
-  },
-
-  "permissions": ["alarms", "storage", "tabs", "favicon"],
-
-  "web_accessible_resources": [
-    {
-      "resources": ["_favicon/*"],
-      "matches": ["<all_urls>"],
-      "extension_ids": ["*"]
-    }
-  ]
+    "16": "icon/icon-16.png",
+    "48": "icon/icon-48.png",
+    "128": "icon/icon-128.png",
+    "512": "icon/icon-512.png"
+  }
 }
