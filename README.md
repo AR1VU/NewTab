@@ -3,6 +3,10 @@
 
 A new ***🔹SUPERCHARGED🔹*** New Tab Experience for your browser
 
+## Demo
+![image](https://github.com/AR1VU/NewTab/assets/79403828/89fc4389-1db2-4601-b2d8-9d3d2b315f90)
+
+
 ## Installation and Setup
 
 1) Download the files through `Code < Download ZIP` or
